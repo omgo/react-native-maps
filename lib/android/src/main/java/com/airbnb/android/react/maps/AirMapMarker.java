@@ -279,7 +279,7 @@ public class AirMapMarker extends AirMapFeature {
   }
 
   public void updateMarkerIcon() {
-    if (!hasViewChanges) return;
+    if (marker == null) return;
 
     if (!hasCustomMarkerView) {
       // No more updates for this, as it's a simple icon
